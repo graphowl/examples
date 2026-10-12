@@ -9,7 +9,7 @@ Runnable examples and synthetic sample data for [GraphOWL](https://github.com/gr
 
 For pushing data in, see the client libraries: [`sdk-python`](https://github.com/graphowl/sdk-python) (which includes a complete CSV adapter) and [`sdk-typescript`](https://github.com/graphowl/sdk-typescript).
 
-The demo server is password-protected; email <connect@graphowl.app> for a login. Everything here uses synthetic data only.
+The demo server needs a passcode: [get one](https://demo.graphowl.app/__access) by booking a short walkthrough (or email <connect@graphowl.app>). Use it as the bearer token. Everything here uses synthetic data only.
 
 ## Licence
 

@@ -1,7 +1,7 @@
 """Ask GraphOWL a SPARQL question from Python, using only the standard library.
 
     export GRAPHOWL_URL=https://your-graphowl-host
-    export GRAPHOWL_TOKEN=...
+    export GRAPHOWL_TOKEN=...            # on the demo, your passcode (OWL-XXXX-XXXX)
     python query.py                      # counts instances per class, now
     python query.py --as-of 2026-10-01T00:00:00Z
 

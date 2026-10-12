@@ -5,6 +5,7 @@
     python query.py                      # counts instances per class, now
     python query.py --as-of 2026-10-01T00:00:00Z
 
+Imported facts live in named graphs, so patterns over them sit inside GRAPH ?g { ... }.
 The request body is {"query": "...", "asOf": "<RFC 3339 timestamp>"}; leave asOf out for the present.
 """
 import argparse
@@ -16,7 +17,7 @@ import urllib.request
 
 DEFAULT_QUERY = """
 SELECT ?class (COUNT(?s) AS ?instances)
-WHERE { ?s a ?class }
+WHERE { GRAPH ?g { ?s a ?class } }
 GROUP BY ?class
 ORDER BY DESC(?instances)
 LIMIT 20
